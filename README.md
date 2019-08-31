@@ -162,7 +162,7 @@ sudo su - your-user
 Clone the repository and run `npm update` for all the dependencies to be installed:
 
 ```bash
-git clone https://github.com/muscleman/cryptonote-nodejs-pool.git pool
+git clone https://github.com/OIEIEIO/cryptonote-nodejs-pool-vout  pool
 cd pool
 
 npm update
