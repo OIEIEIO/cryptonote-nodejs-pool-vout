@@ -100,13 +100,7 @@ Community / Support
 
 #### Pools Using This Software
 
-* https://imaginary.stream/
-* https://graft.anypool.net/
-* https://www.dark-mine.su/
-* http://itns.proxpool.com/
-* https://bytecoin.pt/
-* https://pool.leviar.io/
-* https://pool.croatpirineus.cat/
+* https://ombre.oieieio.xyz/
 
 Usage
 ===
@@ -187,16 +181,16 @@ Explanation for each field:
 "coin": "graft",
 
 /* Used for front-end display */
-"symbol": "GRFT",
+"symbol": "OMB",
 
 /* Minimum units in a single coin, see COIN constant in DAEMON_CODE/src/cryptonote_config.h */
-"coinUnits": 10000000000,
+"coinUnits": 1000000000,
 
 /* Number of coin decimals places for notifications and front-end */
 "coinDecimalPlaces": 4,
   
 /* Coin network time to mine one block, see DIFFICULTY_TARGET constant in DAEMON_CODE/src/cryptonote_config.h */
-"coinDifficultyTarget": 120,
+"coinDifficultyTarget": 60,
 
 /* Set daemon type. Supported values: default, forknote (Fix block height + 1), bytecoin (ByteCoin Wallet RPC API) */
 "daemonType": "default",
@@ -206,8 +200,8 @@ Explanation for each field:
    Supported variants for "cryptonight": 0 (Original), 1 (Monero v7), 3 (Stellite / XTL)
    Supported variants for "cryptonight_light": 0 (Original), 1 (Aeon v7), 2 (IPBC)
    Supported blob types: 0 (Cryptonote), 1 (Forknote v1), 2 (Forknote v2), 3 (Cryptonote v2 / Masari) */
-"cnAlgorithm": "cryptonight",
-"cnVariant": 1,
+"cnAlgorithm": "cryptonight_heavy",
+"cnVariant": 0,
 "cnBlobType": 0,
 "includeHeight":false, /*true to include block.height in job to miner*/
 "includeAlgo":"cn/wow", /*wownero specific change to include algo in job to miner*/
@@ -376,10 +370,7 @@ Explanation for each field:
     "poolFee": 0.8, // 0.8% pool fee (1% total fee total including donations)
     "devDonation": 0.2, // 0.2% donation to send to pool dev
     "networkFee": 0.0, // Network/Governance fee (used by some coins like Loki)
-    
-    /* Some forknote coins have an issue with block height in RPC request, to fix you can enable this option.
-       See: https://github.com/forknote/forknote-pool/issues/48 */
-    "fixBlockHeightRPC": false
+    "useFirstVout": true // use in RYO and Loki code for block dev fee
 },
 
 /* AJAX API used for front-end website. */
@@ -403,7 +394,7 @@ Explanation for each field:
 /* Coin daemon connection details (default port is 18981) */
 "daemon": {
     "host": "127.0.0.1",
-    "port": 18981
+    "port": 19744
 },
 
 /* Wallet daemon connection details (default port is 18980) */
