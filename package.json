@@ -3,10 +3,10 @@
     "version": "1.4.0",
     "license": "GPL-2.0",
     "Original author": "Daniel Vandal",
-    "Maintained by": "Musclesonvacation",
+    "Maintained by": "OIEIEIO",
     "repository": {
         "type": "git",
-        "url": "https://github.com/muscleman/cryptonote-nodejs-pool.git"
+        "url": "https://github.com/https://github.com/OIEIEIO/cryptonote-nodejs-pool-vout"
     },
     "dependencies": {
         "async": "1",
