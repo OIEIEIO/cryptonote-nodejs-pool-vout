@@ -6,7 +6,7 @@
     "Maintained by": "OIEIEIO",
     "repository": {
         "type": "git",
-        "url": "https://github.com/https://github.com/OIEIEIO/cryptonote-nodejs-pool-vout"
+        "url": "https://github.com/OIEIEIO/cryptonote-nodejs-pool-vout"
     },
     "dependencies": {
         "async": "1",
